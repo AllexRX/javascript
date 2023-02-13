@@ -5,20 +5,26 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>ex003</h1>
-   <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos veritatis sed quia, nemo nesciunt cum voluptate ea est fugit eum porro sit, quod dolores suscipit adipisci obcaecati alias expedita.
-   </p>
+   <main>
+      <h1>ex003</h1>
+      <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos veritatis sed quia, nemo nesciunt cum voluptate ea est fugit eum porro sit, quod dolores suscipit adipisci obcaecati alias expedita.
+      </p>
+   </main>
+
+
    <script>
-      var nome = window.prompt('Qual é o seu nome?') //vai perguntar o nome
-      alert('Seja bem vindo ' + nome)
-      var n1 = prompt ('Digite um número: ') // aqui a variável recebe um valor como string e não como number
-      var n2 = prompt ('Digite outro número') // aqui a variável recebe um valor como string e não como number
+      
+      var n1 = Number (prompt ('Digite um número: ')) // aqui a variável recebe um valor como string e não como number
+      var n2 = Number (prompt ('Digite outro número')) // aqui a variável recebe um valor como string e não como number
          /* Para fazer somas entre dois números ou mais, dependendo vc vai ter que fazer conversões de estring para number */
-      var soma = (n1 + n2)
-      alert('o valor da sua soma é ' + soma)
+      var soma = n1 + n2
+      alert(`a soma entre ${n1} e ${n2} é igual a ${soma} é `) //concatenação
+      // (number + number) para adição
+      // (string + string) para concatenação
    </script>
 </body>
 </html>
