@@ -13,12 +13,12 @@
 
    <label for="txt_velocidade">Velocidade do carro:</label>
    <input type="Number" name="txt_velocidade" id="txt_velocidade"> Km/h 
-   <input type="button" value="Verificar" onclick="calcular()">
+   <input type="button" value="Verificar" onclick="enviar()">
    <div id="res">
 
    </div>
    <script>
-      function calcular() {
+      function enviar() {
          var txtv = window.document.querySelector('input#txt_velocidade')
          var res = window.document.querySelector('div#res')
          var vel = Number(txtv.value)

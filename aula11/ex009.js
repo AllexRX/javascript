@@ -1,4 +1,4 @@
-let country = 'bro'
+let country = 'Angola'
 console.log(`You live in ${country}`)
 if (country == 'Brasil') {
    console.log(`You are Brasileiro`)
