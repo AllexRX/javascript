@@ -1,6 +1,6 @@
 body {
    background-color: rgb(69, 69, 214);
-   font: normal 1.3em Arial;
+   font: normal 1.2em Arial;
 }
 header {
    text-align: center;
@@ -11,12 +11,15 @@ section {
    background-color: aliceblue;
    border-radius: 5px;
    padding: 15px;
-   width: 500px;
+   width: 80vw;
    margin: 20px auto;
    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.534);
 }
-#div1 {
-   width: 500px;
+#idade {
+   width: 200px;
+}
+div#res {
+   padding-top: 10px;
 }
 footer {
    text-align: center;
