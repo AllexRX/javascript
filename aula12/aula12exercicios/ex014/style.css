@@ -15,6 +15,14 @@ section {
    margin: 20px auto;
    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.534);
 }
+#msg {
+   text-align: center;
+   padding: 10px;
+}
+div {
+   width: 250px;
+   margin: auto;
+}
 footer {
    text-align: center;
    padding-top: 20px;
