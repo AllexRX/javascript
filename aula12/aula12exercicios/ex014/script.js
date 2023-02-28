@@ -1,9 +1,9 @@
 function carregar() {
-	var msg = window.document.getElementById('msg')
-	var img = window.document.getElementById('img')
-	var data = new Date()
-	var hora = data.getHours()
-   var minuto = data.getMinutes()
+	var msg = window.document.getElementById('msg') //cria  uma variavel chamada "msg" que vai receber o conteudo do id "msg" do documento html
+	var img = window.document.getElementById('img') //cria  uma variavel chamada "img" que vai receber o conteudo do id "img" do documento html
+	var data = new Date() // vai pegar a data do pc do user
+	var hora = data.getHours()//uma varivel que vai pegar as horas em tempo real do seu computador de acordo com a variavel "data"
+   var minuto = data.getMinutes() //uma varivel que vai pegar os minutos em tempo real do seu computador de acordo com a variavel "data"
 	msg.innerHTML = `Agora são ${hora}:${minuto} horas.`
    
    if (hora >= 5 && hora < 12) {
