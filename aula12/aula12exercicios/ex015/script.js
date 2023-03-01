@@ -40,5 +40,11 @@ function verificar() {
       res.style.textAlign = 'center' //vai alinhar o texto do resultado no centro
       res.innerHTML = `Detectamos: ${genero} com ${idade} anos`
       res.appendChild(img) //vai inserir o img logo a baixo da propriedade a cima
+      res.style.display = 'flex'
+      res.style.justifyContent = 'center'
+      res.style.flexDirection = 'column'
+      img.style.width = '250px'
+      img.style.height = '250px'
+      img.style.margin = 'auto'
    }
 }
