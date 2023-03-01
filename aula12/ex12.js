@@ -1,7 +1,8 @@
-var agora = new Date()
-var agora = agora.getHours()
-let horas = agora
-console.log(`Agora são exatamente ${horas} horas`)
+var data = new Date()
+var agora = data.getHours()
+var minuto = data.getMinutes()
+let horas = agora //não é necessáro essa variável aqui, mas vou deixar
+console.log(`Agora são exatamente ${horas}:${minuto}`)
 if (horas < 5) {
    console.log('Tenha um ótimo dia')
 } else if (horas <= 12) {
