@@ -7,17 +7,31 @@
    <title>Modelo de Exercício</title>
    <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
+<body>
    <header id="header">
-      <h1>Hora do Dia</h1>
+      <h1>Vamos Contar</h1>
    </header>
 
    <section>
-      <div id="msg">
-         <p>Oi</p>
+      <div>
+         <p>
+            <label for="id_inicio">Inicio:</label>
+            <input type="number" name="inicio" id="id_inicio">
+         </p>
+         <p>
+            <label for="id_fim">Fim:</label>
+            <input type="number" name="fim" id="id_fim">
+         </p>
+         <p>
+            <label for="id_passo">Passo:</label>
+            <input type="number" name="passo" id="id_passo">
+         </p>
+         <p>
+            <input type="button" value="Criar" onclick="criar()">
+         </p>
       </div>
-      <div id="img">
-         <img src="manha.png" alt="foto de manhã">
+      <div id="contando">
+         
       </div>
    </section>
 

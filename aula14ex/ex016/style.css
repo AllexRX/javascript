@@ -21,7 +21,7 @@ section {
 }
 div {
    width: 250px;
-   margin: auto;
+   margin-left: 10px;
 }
 footer {
    text-align: center;
