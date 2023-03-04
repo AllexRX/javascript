@@ -11,17 +11,13 @@ section {
    background-color: aliceblue;
    border-radius: 5px;
    padding: 15px;
-   width: 500px;
+   width: 50vw;
    margin: 20px auto;
    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.534);
 }
 #msg {
    text-align: center;
    padding: 10px;
-}
-div {
-   width: 250px;
-   margin-left: 10px;
 }
 footer {
    text-align: center;
