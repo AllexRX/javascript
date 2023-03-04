@@ -1,27 +1,18 @@
-function carregar() {
-	var msg = window.document.getElementById('msg') //cria  uma variavel chamada "msg" que vai receber o conteudo do id "msg" do documento html
-	var img = window.document.getElementById('img') //cria  uma variavel chamada "img" que vai receber o conteudo do id "img" do documento html
-	var data = new Date() // vai pegar a data do pc do user
-	var hora = data.getHours()//uma varivel que vai pegar as horas em tempo real do seu computador de acordo com a variavel "data"
-   var minuto = data.getMinutes() //uma varivel que vai pegar os minutos em tempo real do seu computador de acordo com a variavel "data"
-	msg.innerHTML = `Agora são ${hora}:${minuto} horas.`
-   
-   if (hora >= 5 && hora < 12) {
-      // BOM DIA
-      img.src = '<img src="manha.png">'
-      document.body.style.background = '#D6D989'
-   } else if (hora >= 12 && hora < 18) {
-      // BOA TARDE
-      img.innerHTML = '<img src="tarde.png">'
-      document.body.style.background = '#B43825'
-      //#F08A7A
-      document.getElementById('footer').style.color = '#EDD4D0';
-      document.getElementById('header').style.color = '#EDD4D0';
+function tabuada() {
+   let numero = document.getElementById('numero');
+   let tab = document.getElementById('seltab');
+   if (numero.value.length == 0) { //para especificar que a condição é com um numero vazio vc precisa digitar esse comando
+      alert('Não foi possível encontrar o número');
    } else {
-      // BOA NOITE
-      img.innerHTML = '<img src="noite.png">'
-      document.body.style.background = '#172026'
-      document.getElementById('footer').style.color = 'aliceblue';
-      document.getElementById('header').style.color = 'aliceblue';
+      let mult = Number(numero.value); //vai pegar o valor numero da variavel "numero"
+      let c = 1 
+      tab.innerHTML = ''// vai fazer com que a campo seja limpo para não ficar uma tabuada em cima da outra
+      while (c <= 10) {
+         let item = document.createElement('option'); //permite criar um elemento HTML diretamento do JS
+         item.text = `${mult} x ${c} = ${mult*c}`;
+         item.value = `tab${c}` //isso para o JS não faz muito sentido, mas para outras linguagens faz
+         tab.appendChild(item); // vai adicionar um item a baixo do item de cima
+         c++ /* vai fazer com que o numero da multiplicação aumente, desse modo, não vai ficar sendo multiplicado por 1 o tempo todo */
+      }
    }
 }
