@@ -5,4 +5,4 @@ function fatorial(n) {
    }
    return fat
 }
-console.log(fatorial(12));
+console.log(fatorial(5));
