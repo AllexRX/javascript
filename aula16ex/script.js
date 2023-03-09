@@ -34,19 +34,19 @@ function adicionar() {
 }
 
 function finalizar() {
-   if (valores.lenght == 0) {
-      alert('Nenhum valor adicionado, adicone valores antes de finalizar.');
+   if (valores.length == 0) {
+      alert('Nenhum valor adicionado, adicione valores antes de finalizar.');
    } else {
       tot = valores.length
       let maior = valores[0];
       let menor = valores[0];
       let soma = 0;
       let media = 0;
-      for(let pos in num) {
+      for(let pos in valores) {
          soma += valores[pos];
-         if (num[pos] > maior) {
+         if (valores[pos] > maior) {
             maior = valores[pos];
-         } else if (num[pos] < menor) {
+         } else if (valores[pos] < menor) {
          menor = valores[pos];
          }
       }
@@ -54,7 +54,7 @@ function finalizar() {
       res.innerHTML = ``
       res.innerHTML += `<p>Ao todo temos ${tot} números cadastrados.</p>`;
       res.innerHTML += `<p>O maior valor foi ${maior} e o menor ${menor}</p>`;
-      res.innerHTML += `<p>A soma entre os valores digitados pelos usuario é equivalente a ${soma}</p>`;
-      res.innerHTML +=  `<p> A média dos valores é ${media}</p>`;
+      res.innerHTML += `<p>A soma entre os valores digitados pelos usuários é equivalente a ${soma}</p>`;
+      res.innerHTML +=  `<p> A média dos valores é ${media.toFixed(2)}</p>`;
    }
 }
